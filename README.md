@@ -1,4 +1,4 @@
-# Bookmarks Dashboard
+# User Reviews Functionality
 
 This project is a full-stack user review system that allows authenticated users to submit reviews (ratings and comments) for various products. The system also provides editing and deletion capabilities for users and includes an admin interface for review management.
 
