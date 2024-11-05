@@ -40,7 +40,7 @@ Before you begin, ensure you have the following installed:
    ```
    
 4. **Configure Environment Variables**
-   Create a .env file in the root directory and add your environment variables:
+   Create a .env file in the root directory and add your environment variables to configure your dbms server credentials.
 5. **Create a database and run the queries in the sql file provided :**  [https://github.com/Farhaan114/Bookmark-functionality/blob/main/bookmarks.sql](https://github.com/Farhaan114/User-Review-Functionality/blob/master/reviews.sql)
    
 6. **Run the Application on the front and back end**
