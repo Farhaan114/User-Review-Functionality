@@ -1,0 +1,125 @@
+/* General product container styling */
+.product-container {
+  max-width: 1000px; /* Set max width */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Product details styling */
+.product-details {
+  margin-bottom: 20px;
+  max-height: 600px; /* Set a fixed max height */
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 20px;
+}
+
+.product-details h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Review list styling */
+.review-list {
+  max-height: 300px; /* Set a fixed height */
+  overflow-y: auto; /* Allow vertical scrolling */
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.review-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.review-list li:last-child {
+  border-bottom: none; /* Remove last border */
+}
+
+/* Review form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form textarea {
+  width: 100%; /* Full width */
+  height: 100px; /* Set a height */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: none; /* Prevent resizing */
+}
+
+form textarea:focus {
+  border-color: #007bff; /* Focus border color */
+}
+
+form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Star rating styling */
+
+.star:hover,
+.star:hover ~ .star {
+  color: #f39c12; /* Hover color */
+}
+.star-rating {
+  display: flex;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 24px; /* Size of the stars */
+  color: grey; /* Default star color */
+  transition: color 0.2s; /* Smooth transition for hover effect */
+}
+
+.star.selected {
+  color: gold; /* Color for selected stars */
+}
+
+.star.hovered {
+  color: orange; /* Color for hovered stars */
+}
