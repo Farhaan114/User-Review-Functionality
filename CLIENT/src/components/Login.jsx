@@ -25,11 +25,14 @@ const Login = () => {
         localStorage.setItem('token', token);
         localStorage.setItem('userId', userId);
         localStorage.setItem('role', role);
+        toast.success('Login successful!');
 
         // Display success message
-        toast.success('Login successful!');
-        // Navigate immediately after success
-        navigate('/Products');
+        setTimeout(() => {
+          // Navigate immediately after success
+          navigate('/Products');
+        }, 1000);
+        
       } else {
         // Show error if token or userId is missing in the response
         toast.error('Login failed! Please check your credentials.');
